@@ -522,10 +522,19 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.h-10 {
-  height: 2.5rem;
+.h-32 {
+  height: 8rem;
 }
 
-.w-10 {
-  width: 2.5rem;
+.w-32 {
+  width: 8rem;
+}
+
+.bg-tertiary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(97 174 201 / var(--tw-bg-opacity));
+}
+
+.font-Montserrat {
+  font-family: Montserrat, sans-serif;
 }
