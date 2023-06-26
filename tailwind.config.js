@@ -32,6 +32,10 @@ module.exports = {
                 iceland:
                     "url('https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/iceland.jpg')",
             },
+            height: {
+                72: '72px',
+                'full-72': 'calc(100% - 72px)',
+            },
         },
         fontFamily: {
             Montserrat: ['Montserrat', 'sans-serif'],
