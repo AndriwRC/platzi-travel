@@ -36,6 +36,12 @@ module.exports = {
                 72: '72px',
                 'full-72': 'calc(100% - 72px)',
             },
+            fontSize: {
+                9: '9px',
+            },
+            lineHeight: {
+                2: '10px',
+            },
         },
         fontFamily: {
             Montserrat: ['Montserrat', 'sans-serif'],

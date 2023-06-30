@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .card {
+        @apply h-44 w-40 rounded-md overflow-hidden bg-secondary;
+    }
+
+    .card__img {
+        @apply w-full h-3/5 bg-no-repeat bg-cover;
+    }
+    .card__content {
+        @apply h-2/5 px-3 py-3 text-white;
+    }
+    .card__content h2 {
+        @apply text-sm font-bold;
+    }
+    .card__content p {
+        @apply text-9 leading-2;
+    }
+}
