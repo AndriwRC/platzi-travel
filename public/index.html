@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="font-Montserrat">
     <header>
         <nav></nav>
     </header>
@@ -33,18 +33,51 @@
 
                 </label>
                 <button type="button"
-                    class="mb-14 rounded-full bg-white h-12 w-48 text-primary text-sm shadow-sm">Explore
+                    class="mb-14 rounded-full bg-white h-12 w-48 text-primary text-sm font-semibold shadow-sm">Explore
                     More</button>
             </form>
         </section>
         <section id="recommended">
-            <article id="card-1" class="card">
-                <img class="card__img bg-norway">
-                <div class="card__content">
-                    <h2>Norway</h2>
-                    <p>Beautiful landscapes</p>
-                </div>
-            </article>
+            <h2 class="text-primary text-2xl font-semibold my-7 mx-4">Our
+                Recommendations</h2>
+            <div class="w-auto overflow-x-auto overscroll-x-contain snap-x scroll-px-4 px-4 flex gap-5">
+                <article id="card-1" class="card">
+                    <img class="card__img bg-norway">
+                    <div class="card__content">
+                        <h2>Norway</h2>
+                        <p>Beautiful landscapes</p>
+                    </div>
+                </article>
+                <article id="card-2" class="card">
+                    <img class="card__img bg-newYork">
+                    <div class="card__content">
+                        <h2>New York</h2>
+                        <p>Concrete jungle</p>
+                    </div>
+                </article>
+                <article id="card-3" class="card">
+                    <img class="card__img bg-yosemite">
+                    <div class="card__content">
+                        <h2>Yosemite</h2>
+                        <p>A break from the world</p>
+                    </div>
+                </article>
+                <article id="card-4" class="card">
+                    <img class="card__img bg-seattle">
+                    <div class="card__content">
+                        <h2>Seattle</h2>
+                        <p>Big City</p>
+                    </div>
+                </article>
+                <article id="card-5" class="card">
+                    <img class="card__img bg-switzerland">
+                    <div class="card__content">
+                        <h2>Switzerland</h2>
+                        <p>Big City</p>
+                    </div>
+                </article>
+
+            </div>
         </section>
         <section id="trends"></section>
         <section id="faqs"></section>
