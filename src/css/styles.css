@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-    .card {
+    .recommended-card {
         @apply h-44 w-40 rounded-md overflow-hidden shrink-0 even:bg-white even:text-tertiary odd:bg-secondary odd:text-white shadow-sm snap-start;
     }
 
@@ -13,10 +13,20 @@
     .card__content {
         @apply h-2/5 px-3 py-3;
     }
-    .card__content h2 {
+    .card__content h3 {
         @apply text-sm font-bold;
     }
     .card__content p {
         @apply text-9 leading-2;
+    }
+
+    .trends-card {
+        @apply w-full h-96 rounded-2xl px-6 py-12 text-white bg-cover bg-center;
+    }
+    .trends-card > h3 {
+        @apply text-2xl font-extrabold mb-3;
+    }
+    .trends-card > p {
+        @apply w-2/3;
     }
 }
