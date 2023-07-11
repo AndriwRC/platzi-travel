@@ -522,6 +522,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.section__title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(204 45 74 / var(--tw-text-opacity));
+}
+
 .recommended-card {
   height: 11rem;
   width: 10rem;
@@ -599,6 +607,24 @@ video {
   width: 66.666667%;
 }
 
+.faq-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.faq-container > h3 {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(204 45 74 / var(--tw-text-opacity));
+}
+
+.faq-container > p {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .relative {
   position: relative;
 }
@@ -619,6 +645,10 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .flex {
@@ -722,12 +752,12 @@ video {
   justify-content: space-between;
 }
 
-.gap-5 {
-  gap: 1.25rem;
+.gap-3 {
+  gap: 0.75rem;
 }
 
-.gap-10 {
-  gap: 2.5rem;
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-9 {
@@ -759,8 +789,16 @@ video {
   background-image: url('https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/LA.jpg');
 }
 
+.bg-bali {
+  background-image: url('https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/bali.jpg');
+}
+
 .bg-chicago {
   background-image: url('https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/chicago.jpg');
+}
+
+.bg-miami {
+  background-image: url('https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/miami.jpg');
 }
 
 .bg-newYork {
@@ -785,14 +823,6 @@ video {
 
 .bg-yosemite {
   background-image: url('https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/yosemite.jpg');
-}
-
-.bg-miami {
-  background-image: url('https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/miami.jpg');
-}
-
-.bg-bali {
-  background-image: url('https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/bali.jpg');
 }
 
 .bg-cover {
@@ -829,6 +859,16 @@ video {
   padding-right: 1.5rem;
 }
 
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .font-Montserrat {
   font-family: Montserrat, sans-serif;
 }
@@ -841,6 +881,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-semibold {

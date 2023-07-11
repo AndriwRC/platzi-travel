@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+    .section__title {
+        @apply text-2xl text-primary font-semibold;
+    }
+
     .recommended-card {
         @apply h-44 w-40 rounded-md overflow-hidden shrink-0 even:bg-white even:text-tertiary odd:bg-secondary odd:text-white shadow-sm snap-start;
     }
@@ -28,5 +32,15 @@
     }
     .trends-card > p {
         @apply w-2/3;
+    }
+
+    .faq-container {
+        @apply w-full flex flex-col gap-2;
+    }
+    .faq-container > h3 {
+        @apply text-primary font-semibold;
+    }
+    .faq-container > p {
+        @apply text-xs;
     }
 }
