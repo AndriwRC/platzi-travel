@@ -35,6 +35,7 @@ module.exports = {
             height: {
                 72: '72px',
                 'full-72': 'calc(100% - 72px)',
+                'screen-3/4': '75vh',
             },
             fontSize: {
                 9: '9px',
