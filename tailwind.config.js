@@ -33,7 +33,7 @@ module.exports = {
                     "url('https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/iceland.jpg')",
             },
             height: {
-                72: '72px',
+                18: '4.5rem/* 72px */',
                 'full-72': 'calc(100% - 72px)',
                 'screen-3/4': '75vh',
             },
