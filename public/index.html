@@ -18,16 +18,20 @@
         <nav></nav>
     </header>
     <main id="main" class="w-full h-auto overflow-hidden mb-7">
-        <section id="home" class="w-full gray h-screen-3/4 relative bg-sanFrancisco bg-cover bg-no-repeat">
+        <section id="home"
+            class="w-full gray h-screen-3/4 relative bg-sanFrancisco bg-cover bg-no-repeat md:bg-sanFranciscoDesktop md:bg-center md:pl-20 md:flex md:flex-col md:justify-center md:gap-10">
 
             <!-- <img class="bg-sanFrancisco bg-cover bg-no-repeat w-full h-full hidden" alt=""> -->
-            <div class="w-full h-18 p-5 flex justify-end">
+            <div class="w-full h-18 p-5 flex justify-end md:hidden">
                 <button class="w-14 h-8 grid place-items-center bg-white rounded-full"> <img
                         src="./assets/icons/moon.svg" alt="" class="w-5 h-5"></button>
 
             </div>
-            <form class="w-full h-full-72 flex flex-col justify-between items-center px-6 ">
-                <label for="searchInput" class="flex justify-center w-full h-12 rounded-full bg-white shadow-sm">
+            <h1 class="hidden md:block md:font-bold md:text-4xl md:w-96">Find More Locations like this</h1>
+            <form
+                class="w-full h-full-72 flex flex-col justify-between items-center px-6 md:items-start md:px-0 md:h-fit">
+                <label for="searchInput"
+                    class="flex justify-center w-full h-12 rounded-full bg-white shadow-sm md:hidden">
                     <img src="./assets/icons/icons-outline-search.svg" alt="">
                     <input type="search" id="searchInput" placeholder="San Francisco"
                         class="bg-transparent text-sm w-32 px-0 border-none focus:bg-transparent focus:ring-0">
