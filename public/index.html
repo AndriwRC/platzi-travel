@@ -10,13 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <script src="./main.js" defer></script>
 </head>
 
 <body class="font-Montserrat">
     <header>
         <nav></nav>
     </header>
-    <main class="w-full h-auto overflow-hidden mb-7">
+    <main id="main" class="w-full h-auto overflow-hidden mb-7">
         <section id="home" class="w-full gray h-screen-3/4 relative bg-sanFrancisco bg-cover bg-no-repeat">
 
             <!-- <img class="bg-sanFrancisco bg-cover bg-no-repeat w-full h-full hidden" alt=""> -->
@@ -25,11 +26,11 @@
                         src="./assets/icons/moon.svg" alt="" class="w-5 h-5"></button>
 
             </div>
-            <form class="w-full h-full-72 flex flex-col justify-between items-center px-6">
+            <form class="w-full h-full-72 flex flex-col justify-between items-center px-6 ">
                 <label for="searchInput" class="flex justify-center w-full h-12 rounded-full bg-white shadow-sm">
                     <img src="./assets/icons/icons-outline-search.svg" alt="">
                     <input type="search" id="searchInput" placeholder="San Francisco"
-                        class="bg-transparent text-sm w-32">
+                        class="bg-transparent text-sm w-32 px-0 border-none focus:bg-transparent focus:ring-0">
 
                 </label>
                 <button type="button"
@@ -127,6 +128,26 @@
 
     </main>
 
+    <section id="login" class="h-screen px-5 py-7">
+        <h2 class="section__title">Log In</h2>
+        <form class="h-4/5 flex flex-col gap-3 mt-8">
+            <label for="username" class="font-semibold text-gray-500">Username:</label>
+            <input type="text" name="username" id="username" placeholder="random_user123" class="input">
+
+            <label for="password" class="font-semibold text-gray-500">Password:</label>
+            <input type="password" name="password" id="password" placeholder="●●●●●●●●" class="input">
+            <div class="w-full flex justify-between text-xs">
+                <span class="underline text-gray-500">Forgot your password?</span>
+                <span class="text-primary font-semibold">Sign In</span>
+            </div>
+
+            <button type="button"
+                class="rounded-full bg-primary h-12 w-48 text-white text-sm font-semibold shadow-sm self-center mt-auto">Log
+                In</button>
+
+        </form>
+    </section>
+
     <footer class="px-5 pt-4 pb-8 bg-gray-100 text-gray-400 border solid border-gray-300">
         <h3 class="text-lg font-semibold">About Us</h3>
         <ul class="list-none my-4 flex flex-col gap-3">
@@ -165,7 +186,7 @@
                     fill="rgb(209 213 219)" />
             </svg>
         </a>
-        <a href="#">
+        <a href="#login">
             <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M5.78225 19.6464C7.4799 17.2799 10.4865 15.4999 15.4999 15.4999C20.5132 15.4999 23.5199 17.2799 25.2175 19.6464C26.8582 21.9336 27.1196 24.5552 27.1248 26.0058C27.13 27.4645 25.9071 28.4166 24.6533 28.4166H6.34642C5.09262 28.4166 3.86971 27.4645 3.87496 26.0058C3.88017 24.5552 4.1415 21.9336 5.78225 19.6464Z"

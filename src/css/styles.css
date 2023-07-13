@@ -43,4 +43,12 @@
     .faq-container > p {
         @apply text-xs;
     }
+
+    .input {
+        @apply rounded-full border-none bg-gray-200 h-12 text-sm px-6;
+    }
+
+    .inactive {
+        @apply hidden;
+    }
 }
