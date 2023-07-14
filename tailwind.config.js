@@ -36,6 +36,7 @@ module.exports = {
                 18: '4.5rem/* 72px */',
                 'full-72': 'calc(100% - 72px)',
                 'screen-3/4': '75vh',
+                'screen-2': '200vh',
             },
             fontSize: {
                 9: '9px',

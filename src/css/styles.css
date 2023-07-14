@@ -4,7 +4,7 @@
 
 @layer components {
     .section__title {
-        @apply text-2xl text-primary font-semibold;
+        @apply text-2xl text-primary font-semibold md:text-4xl;
     }
 
     .recommended-card {
@@ -25,13 +25,13 @@
     }
 
     .trends-card {
-        @apply w-full h-96 rounded-2xl px-6 py-12 text-white bg-cover bg-center;
+        @apply w-full h-96 rounded-2xl px-6 py-12 text-white bg-cover bg-center md:h-auto md:flex md:flex-col md:items-end md:text-right;
     }
     .trends-card > h3 {
-        @apply text-2xl font-extrabold mb-3;
+        @apply text-2xl font-extrabold mb-3 md:text-4xl;
     }
     .trends-card > p {
-        @apply w-2/3;
+        @apply w-2/3 md:text-2xl;
     }
 
     .faq-container {

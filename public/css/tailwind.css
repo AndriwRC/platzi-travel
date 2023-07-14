@@ -696,6 +696,13 @@ select {
   color: rgb(204 45 74 / var(--tw-text-opacity));
 }
 
+@media (min-width: 768px) {
+  .section__title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
 .recommended-card {
   height: 11rem;
   width: 10rem;
@@ -762,6 +769,16 @@ select {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 768px) {
+  .trends-card {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+}
+
 .trends-card > h3 {
   margin-bottom: 0.75rem;
   font-size: 1.5rem;
@@ -769,8 +786,22 @@ select {
   font-weight: 800;
 }
 
+@media (min-width: 768px) {
+  .trends-card > h3 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
 .trends-card > p {
   width: 66.666667%;
+}
+
+@media (min-width: 768px) {
+  .trends-card > p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 .faq-container {
@@ -862,10 +893,6 @@ select {
   margin-top: auto;
 }
 
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
 }
@@ -932,10 +959,6 @@ select {
 
 .w-5 {
   width: 1.25rem;
-}
-
-.w-96 {
-  width: 24rem;
 }
 
 .w-auto {
@@ -1095,10 +1118,6 @@ select {
   background-position: left;
 }
 
-.bg-center {
-  background-position: center;
-}
-
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -1162,11 +1181,6 @@ select {
   font-family: Montserrat, sans-serif;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1180,10 +1194,6 @@ select {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .font-semibold {
@@ -1231,12 +1241,40 @@ select {
 }
 
 @media (min-width: 768px) {
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .md\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .md\:row-span-3 {
+    grid-row: span 3 / span 3;
+  }
+
+  .md\:row-span-5 {
+    grid-row: span 5 / span 5;
+  }
+
+  .md\:row-span-6 {
+    grid-row: span 6 / span 6;
+  }
+
   .md\:block {
     display: block;
   }
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:grid {
+    display: grid;
   }
 
   .md\:hidden {
@@ -1246,6 +1284,10 @@ select {
   .md\:h-fit {
     height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .md\:h-screen-2 {
+    height: 200vh;
   }
 
   .md\:w-96 {
@@ -1264,20 +1306,12 @@ select {
     justify-content: center;
   }
 
-  .md\:gap-12 {
-    gap: 3rem;
-  }
-
   .md\:gap-10 {
     gap: 2.5rem;
   }
 
   .md\:bg-sanFranciscoDesktop {
     background-image: url('https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/sanFranciscoDesktop.jpg');
-  }
-
-  .md\:bg-bottom {
-    background-position: bottom;
   }
 
   .md\:bg-center {
