@@ -4,12 +4,12 @@
 
 @layer components {
     .section__title {
-        @apply text-2xl text-primary font-semibold lg:text-4xl;
+        @apply text-2xl text-primary font-semibold lg:text-4xl dark:text-white;
     }
 
     /* Recommended Section */
     .recommended-card {
-        @apply h-44 w-40 rounded-md overflow-hidden shrink-0 even:bg-white even:text-tertiary odd:bg-secondary odd:text-white shadow-sm snap-start lg:h-80 lg:w-72 lg:rounded-xl;
+        @apply h-44 w-40 rounded-md overflow-hidden shrink-0 even:bg-white even:text-tertiary odd:bg-secondary odd:text-white shadow-sm snap-start lg:h-80 lg:w-72 lg:rounded-xl dark:even:bg-gray-800 dark:odd:bg-gray-700 dark:text-white;
     }
     .card__img {
         @apply w-full h-3/5 bg-no-repeat bg-cover;
@@ -40,10 +40,10 @@
         @apply w-full flex flex-col gap-2 lg:gap-5;
     }
     .faq-container > h3 {
-        @apply text-primary font-semibold lg:text-3xl;
+        @apply text-primary font-semibold lg:text-3xl dark:text-white;
     }
     .faq-container > p {
-        @apply text-xs lg:text-2xl;
+        @apply text-xs lg:text-2xl dark:text-white;
     }
 
     /* Input Page */
@@ -54,5 +54,26 @@
     /* JS Interaction */
     .inactive {
         @apply hidden;
+    }
+
+    /* Scrollbar */
+    /* width */
+    ::-webkit-scrollbar {
+        @apply w-2 h-2;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        @apply bg-transparent;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        @apply bg-gray-300 rounded-lg;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-gray-500;
     }
 }
