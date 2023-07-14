@@ -4,13 +4,13 @@
 
 @layer components {
     .section__title {
-        @apply text-2xl text-primary font-semibold md:text-4xl;
+        @apply text-2xl text-primary font-semibold lg:text-4xl;
     }
 
+    /* Recommended Section */
     .recommended-card {
-        @apply h-44 w-40 rounded-md overflow-hidden shrink-0 even:bg-white even:text-tertiary odd:bg-secondary odd:text-white shadow-sm snap-start;
+        @apply h-44 w-40 rounded-md overflow-hidden shrink-0 even:bg-white even:text-tertiary odd:bg-secondary odd:text-white shadow-sm snap-start lg:h-80 lg:w-72 lg:rounded-xl;
     }
-
     .card__img {
         @apply w-full h-3/5 bg-no-repeat bg-cover;
     }
@@ -18,36 +18,40 @@
         @apply h-2/5 px-3 py-3;
     }
     .card__content h3 {
-        @apply text-sm font-bold;
+        @apply text-sm font-bold lg:text-2xl;
     }
     .card__content p {
-        @apply text-9 leading-2;
+        @apply text-9 leading-2 lg:text-base;
     }
 
+    /* Trends Section */
     .trends-card {
         @apply w-full h-96 rounded-2xl px-6 py-12 text-white bg-cover bg-center md:h-auto md:flex md:flex-col md:items-end md:text-right;
     }
     .trends-card > h3 {
-        @apply text-2xl font-extrabold mb-3 md:text-4xl;
+        @apply text-2xl font-extrabold mb-3 lg:text-4xl;
     }
     .trends-card > p {
-        @apply w-2/3 md:text-2xl;
+        @apply w-2/3 lg:text-2xl;
     }
 
+    /* FAQs Section */
     .faq-container {
-        @apply w-full flex flex-col gap-2;
+        @apply w-full flex flex-col gap-2 lg:gap-5;
     }
     .faq-container > h3 {
-        @apply text-primary font-semibold;
+        @apply text-primary font-semibold lg:text-3xl;
     }
     .faq-container > p {
-        @apply text-xs;
+        @apply text-xs lg:text-2xl;
     }
 
+    /* Input Page */
     .input {
         @apply rounded-full border-none bg-gray-200 h-12 text-sm px-6;
     }
 
+    /* JS Interaction */
     .inactive {
         @apply hidden;
     }

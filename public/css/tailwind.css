@@ -696,12 +696,14 @@ select {
   color: rgb(204 45 74 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .section__title {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
 }
+
+/* Recommended Section */
 
 .recommended-card {
   height: 11rem;
@@ -729,6 +731,14 @@ select {
   color: rgb(97 174 201 / var(--tw-text-opacity));
 }
 
+@media (min-width: 1024px) {
+  .recommended-card {
+    height: 20rem;
+    width: 18rem;
+    border-radius: 0.75rem;
+  }
+}
+
 .card__img {
   height: 60%;
   width: 100%;
@@ -750,10 +760,26 @@ select {
   font-weight: 700;
 }
 
+@media (min-width: 1024px) {
+  .card__content h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
 .card__content p {
   font-size: 9px;
   line-height: 10px;
 }
+
+@media (min-width: 1024px) {
+  .card__content p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+/* Trends Section */
 
 .trends-card {
   height: 24rem;
@@ -786,7 +812,7 @@ select {
   font-weight: 800;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .trends-card > h3 {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -797,12 +823,14 @@ select {
   width: 66.666667%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .trends-card > p {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
+
+/* FAQs Section */
 
 .faq-container {
   display: flex;
@@ -811,16 +839,38 @@ select {
   gap: 0.5rem;
 }
 
+@media (min-width: 1024px) {
+  .faq-container {
+    gap: 1.25rem;
+  }
+}
+
 .faq-container > h3 {
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(204 45 74 / var(--tw-text-opacity));
 }
 
+@media (min-width: 1024px) {
+  .faq-container > h3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
 .faq-container > p {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+
+@media (min-width: 1024px) {
+  .faq-container > p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+/* Input Page */
 
 .input {
   height: 3rem;
@@ -833,6 +883,8 @@ select {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
+
+/* JS Interaction */
 
 .inactive {
   display: none;
@@ -856,14 +908,6 @@ select {
 
 .left-0 {
   left: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.z-10 {
-  z-index: 10;
 }
 
 .z-20 {
@@ -989,6 +1033,18 @@ select {
   width: 100vw;
 }
 
+.w-11 {
+  width: 2.75rem;
+}
+
+.w-44 {
+  width: 11rem;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
 .snap-x {
   scroll-snap-type: x var(--tw-scroll-snap-strictness);
 }
@@ -1026,6 +1082,10 @@ select {
   justify-content: space-between;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -1034,20 +1094,12 @@ select {
   gap: 1.25rem;
 }
 
-.gap-9 {
-  gap: 2.25rem;
-}
-
-.gap-12 {
-  gap: 3rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-9 {
+  gap: 2.25rem;
 }
 
 .self-center {
@@ -1205,16 +1257,16 @@ select {
   padding-bottom: 2rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
 .pl-6 {
   padding-left: 1.5rem;
 }
 
 .pr-14 {
   padding-right: 3.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .font-Montserrat {
@@ -1236,12 +1288,12 @@ select {
   line-height: 1rem;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-gray-400 {
@@ -1386,19 +1438,21 @@ select {
     display: block;
   }
 
-  .lg\:flex {
-    display: flex;
-  }
-
   .lg\:hidden {
     display: none;
   }
 
-  .lg\:justify-between {
-    justify-content: space-between;
+  .lg\:gap-12 {
+    gap: 3rem;
   }
 
-  .lg\:align-middle {
-    vertical-align: middle;
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
